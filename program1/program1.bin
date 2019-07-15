@@ -1,0 +1,21 @@
+;First Name: Ryan
+;Last Name: Kim
+;ID: E01724040
+;Assignment #1
+
+0011000000000000 ;start the program at location x3000
+0101100100100000 ;clear R3, to be used as sum of R0 + R1
+0001011000000001 ;add R0 and R1 and store in R3
+		 ;find compliment 2's notation of R2
+1001010010111111 ;invert bits of R2
+0001010010100001 ;add one to R2
+                 ;determine if R3 or R2 is larger
+0001011100000010 ;add R3 and R2
+0000001000000001 ;branch, if positive, jump to x3007
+0000110000000011 ;branch, if negative or zero, jump to x300A
+0001000000100010 ;R0 = R0 + 2
+0001001001100011 ;R1 = R1 + 3
+1111000000100101 ;halt
+0001000000111111 ;R0 = R0 - 1
+0001001001111110 ;R1 = R1 - 2
+1111000000100101 ;halt

@@ -1,0 +1,21 @@
+//Symbol Name		Page Address
+//----------------	------------
+//	BREAK                   3014
+//	CHAR                    3005
+//	DISPLAY                 3048
+//	END                     3046
+//	ENDOUT                  3069
+//	EQUAL                   303A
+//	LOAD                    301C
+//	LOOP                    3003
+//	LOOP2                   3040
+//	LOOP3                   3055
+//	LOWER                   303C
+//	NEWLINE                 3068
+//	PROMPT                  3077
+//	SAVE                    3012
+//	SAVER1                  3067
+//	SORT                    3032
+//	START                   301E
+//	STORE                   3011
+//	STORE2                  3042

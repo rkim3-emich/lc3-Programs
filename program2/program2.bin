@@ -1,0 +1,57 @@
+;First Name: Ryan
+;Last Name: Kim
+;ID: E01724040
+;Assignment #1
+
+;R0 000 stores lowest value
+;R1 001 stores temp value
+;R2 010 stores memory address of lowest value
+;R3 011 stores value for loop
+;R4 100 stores memory address for current value
+;R5 101 stores compliment 2's of temp value
+;R6 010
+;R7 000
+
+0011000000000000 ;start the program at location x3000
+0101000000100000 ;clear R0
+0101001001100000 ;clear R1
+0101010010100000 ;clear R2
+0101011011100000 ;clear R3
+0001011011101001 ;store 9 in R3
+0101100100100000 ;clear R4
+0101101101100000 ;clear R5
+0010100000000000 ;load 7000 into R4
+0111000000000000 ;x7000
+1010000111111110 ;load value from x7000 into R0
+0001100100100001 ;add 1 to R4
+0110001100000000 ;load 7000 range into R1
+		 ;compliment 2 of R1
+1001101001111111 ;store not of R1 in R5
+0001101101100001 ;add 1 to R5
+0001101101000000 ;add R5 to R0
+0000001000000001 ;jump if R1 is less than R0
+0000110000000100 ;jump when R1 is greater than R0
+0101000000100000 ;clear R0
+0001000000000001 ;add R1 to R0
+0101010010100000 ;clear R2
+0001010010000100 ;add R4 to R2
+0001011011111111 ;subtract 1 from R3
+0000001111110011 ;if positive jump back
+0101001001100000 ;clear R1
+1010001111101111 ;indirect load 7000 into R1
+0111001010000000 ;store value of 7000 in lowest value address
+1011000111101101 ;store lowest value in 7000
+
+
+
+
+
+
+
+
+
+
+
+
+
+
